@@ -46,8 +46,6 @@ define([
 
     initialize: function() {
       this.client = client;
-      this.setupData();
-      this.setupEvents();
 
       _.bindAll(this, 'fetchData');
       this.fetchData = _.debounce(this.fetchData, 30);

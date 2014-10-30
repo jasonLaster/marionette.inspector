@@ -7,6 +7,13 @@ define([
 
     channelName: '',
 
+    constructor: function() {
+      Marionette.Module.prototype.constructor.apply(this, arguments);
+
+      this.setupData();
+      this.setupEvents();
+    },
+
     initialize: function() {
     },
 
